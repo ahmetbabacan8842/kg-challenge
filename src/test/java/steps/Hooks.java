@@ -33,17 +33,16 @@ public class Hooks extends BaseSteps {
         }
 
         if ("android".equalsIgnoreCase(platform)) {
-            /*File appDir = new File(
+            File appDir = new File(
                     "src/test/java/driver");
-            File app = new File(appDir, "sahibinden.apk");*/
+            File app = new File(appDir, "n11.apk");
 
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
             capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
-            capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
-            capabilities.setCapability("appPackage", "com.sahibinden");
-            capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
-            capabilities.setCapability(MobileCapabilityType.APP, "/Users/ahmetbabacan/Projects/kgchallenge/src/test/java/driver/sahibinden.com_com.sahibinden.apk");
+            capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.0");
+            capabilities.setCapability("appPackage", "com.dmall.mfandroid");
+            capabilities.setCapability(MobileCapabilityType.APP, app);
 
             base.driver =  new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     }

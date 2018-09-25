@@ -1,7 +1,7 @@
 # KG Test Automation Challenge
 
 ## About
-Tests Sahibinden  login cases.
+Tests N11     Login cases.
               Search and favorite cases.
 
 
@@ -13,9 +13,9 @@ cd kg-challenge
 mvn clean test
 ```
 
-## Multi Platform
+## Platform
 
-Also it can be run on Chrome or Firefox if requested, you just need to change the platform from the `src/test/resources/config.json` file or give a JVM parameter to mvn command, for example:
+It can be run in Android platform
 ```bash
-mvn clean test -Dplatform=firefox
+mvn clean test -Dplatform=android
 ```
